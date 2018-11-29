@@ -1,7 +1,87 @@
 <!DOCTYPE html>
 <html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- <link rel="stylesheet" type="text/css" href="kariStyle.css"> -->
+
 <body>
-<h1>Hello World</h1>
-<p>Hosted with GitHub Pages.</p>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand active" href="index.html">Kari Sanford <span class="sr-only">(current)</span></a>
+
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="resume.html">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="btn-group">
+      <a class="btn btn-default" href="https://linkedin.com/in/karisanfordstem/">
+        <i class="fa fa-linkedin btn" title="LinkedIn"> </i>
+      </a>
+      <a class="btn btn-default" href="https://github.com/kpsanfor">
+        <i class="fa fa-github btn" title="Github"> </i>
+      </a>
+      <a class="btn btn-default" href="https://twitter.com/KariGrasshopper">
+        <i class="fa fa-twitter btn" title="Twitter"> </i>
+      </a>
+    </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6"> <br>
+        <!-- Slideshow -->
+        <section>
+          <img class="mySlides" src="HomeImages/KariRubiks.jpg" alt="Girl with Rubik's Cube"
+          style="width:100%; max-height:50%;">
+          <img class="mySlides" src="HomeImages/GDMSVehicle.jpg" alt="Girl next to vehicle"
+          style="width:100%; max-height:50%;">
+          <img class="mySlides" src="HomeImages/IraChatFreshman.jpg" alt="Girl chatting with Ira A. Fulton"
+          style="width:100%; max-height:50%;">
+        </section>
+
+        <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block" ;
+            setTimeout(carousel, 3000);
+        }
+        </script>
+      <br> </div>
+    <div class="col-md-6"> <br>
+      <h1>Kari Sanford</h1>
+      <h2>IT Infrastructure Business Analyst</h2>
+      <h3>General Dynamics Missions Systems</h3>
+      <h4>Engineering Management, focus in Computer Science</h4>
+      <h5>Class of 2018, Arizona State University</h5>
+      <p>At General Dynamics Mission Systems, I'm exploring the world of IT- where people rely on tech solutions every day. I create solutions and work to prevent problems from recurring. I'm interested in system infrastructure and understanding the strategy behind its architecture.</p>
+      <br> </div>
+  </div>
+</div>
+
 </body>
 </html>
