@@ -1,10 +1,32 @@
 
-.test {
-   color:green;
+body{
+  background-image: url("HomeImages/AlternateGeo.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  font-family: Helvetica, Sans-Serif;
 }
 
-.navbar {
-  background-color:teal;
-  background-image: none;
-  background-repeat: no-repeat;
- }
+h1{
+  color: #543642;
+    font-size:175%;
+}
+
+h2{
+  color: #364639;
+  font-size:130%;
+}
+
+h3{
+  color: #294537;
+  font-size:105%;
+}
+
+h4{
+  color: black;
+  text-decoration:underline;
+  font-size:100%
+}

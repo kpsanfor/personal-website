@@ -4,8 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- <link rel="stylesheet" type="text/css" href="kariStyle.css"> -->
+<link rel="stylesheet" type="text/css" href="kariStyle.css">
 
 <body>
 
@@ -18,12 +17,23 @@
       <li class="nav-item">
         <a class="nav-link" href="resume.html">Resume</a>
       </li>
-      <li class="nav-item">
+     <li class="nav-item">
         <a class="nav-link" href="portfolio.html">Portfolio</a>
       </li>
+    <!--   <li class="dropdown">
+               <a href="portfolio.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Portfolio</span></a>
+               <ul class="dropdown-menu">
+                           <li><a href="outreach.html">Outreach</a></li>
+                           <li><a href="creative.html">Creative</a></li>
+                           <li><a href="awardsAndPress.html">Press Releases</a></li>
+                           <li><a href="archive.html">Archive</a></li>
+                         </ul>
+             </li>-->
+
     </ul>
   </div>
 
+  <ul class="nav navbar-nav navbar-right">
   <div class="btn-group">
       <a class="btn btn-default" href="https://linkedin.com/in/karisanfordstem/">
         <i class="fa fa-linkedin btn" title="LinkedIn"> </i>
@@ -35,22 +45,20 @@
         <i class="fa fa-twitter btn" title="Twitter"> </i>
       </a>
     </div>
+  </ul>
+</nav> <!--end of navigation -->
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-</nav>
 
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-6"> <br>
         <!-- Slideshow -->
         <section>
-          <img class="mySlides" src="HomeImages/KariRubiks.jpg" alt="Girl with Rubik's Cube"
+          <img class="mySlides" src="HomeImages/KariRubiksTint.jpg" alt="Girl with Rubik's Cube"
           style="width:100%; max-height:50%;">
-          <img class="mySlides" src="HomeImages/GDMSVehicle.jpg" alt="Girl next to vehicle"
+          <img class="mySlides" src="HomeImages/GDMSVehicleTint.jpg" alt="Girl next to vehicle"
           style="width:100%; max-height:50%;">
-          <img class="mySlides" src="HomeImages/IraChatFreshman.jpg" alt="Girl chatting with Ira A. Fulton"
+          <img class="mySlides" src="HomeImages/IraChatFreshmanTint.jpg" alt="Girl chatting with Ira A. Fulton"
           style="width:100%; max-height:50%;">
         </section>
 
@@ -58,7 +66,6 @@
         // Automatic Slideshow - change image every 3 seconds
         var myIndex = 0;
         carousel();
-
         function carousel() {
             var i;
             var x = document.getElementsByClassName("mySlides");
@@ -73,15 +80,25 @@
         </script>
       <br> </div>
     <div class="col-md-6"> <br>
-      <h1>Kari Sanford</h1>
-      <h2>IT Infrastructure Business Analyst</h2>
-      <h3>General Dynamics Missions Systems</h3>
-      <h4>Engineering Management, focus in Computer Science</h4>
-      <h5>Class of 2018, Arizona State University</h5>
+      <h1 style="font-size:300%;"><b>Kari Sanford</b></h1>
+      <div class="row"> <br>
+        <div class="col"><br>
+        <h2 style="text-align:center; font-size:200%;">Infrastructure Business Analyst</h2>
+        <h3 style="text-align:center; font-size:150%;">General Dynamics Missions Systems</h3>
+        <br> </div>
+      <div class="col"><br>
+        <h2 style="text-align:center; font-size:200%;">Engineering Management, BSE</h2>
+        <h3 style="text-align:center; font-size:150%;">Arizona State University, Class of 2018</h3>
+        <br> </div>
+      </div>
       <p>At General Dynamics Mission Systems, I'm exploring the world of IT- where people rely on tech solutions every day. I create solutions and work to prevent problems from recurring. I'm interested in system infrastructure and understanding the strategy behind its architecture.</p>
       <br> </div>
   </div>
 </div>
 
 </body>
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
 </html>
