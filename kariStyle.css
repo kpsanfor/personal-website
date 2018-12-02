@@ -1,4 +1,5 @@
 
+
 body{
   background-image: url("HomeImages/AlternateGeo.jpg");
   background-color: #cccccc;
@@ -11,17 +12,17 @@ body{
 }
 
 h1{
-  color: #543642;
+  color:  #543642;
     font-size:175%;
 }
 
 h2{
-  color: #364639;
+  color: #375934;
   font-size:130%;
 }
 
 h3{
-  color: #294537;
+  color: #364639;
   font-size:105%;
 }
 
@@ -29,4 +30,13 @@ h4{
   color: black;
   text-decoration:underline;
   font-size:100%
+}
+
+
+a:link{
+  color: #714951;
+}
+
+a:visited, a:hover, a:active{
+  color: #714951 /*#795F6C*/;
 }
