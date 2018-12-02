@@ -40,3 +40,14 @@ a:link{
 a:visited, a:hover, a:active{
   color: #714951 /*#795F6C*/;
 }
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: none;
+    border-width: 1px;
+    border-top: 1px solid #714951;
+}
