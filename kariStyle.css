@@ -34,11 +34,12 @@ h4{
 
 
 a:link{
-  color: #714951;
+  color: #843343;
 }
 
 a:visited, a:hover, a:active{
-  color: #714951 /*#795F6C*/;
+  color: #543642;
+  text-decoration:underline;
 }
 
 hr {
