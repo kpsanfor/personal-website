@@ -1,15 +1,19 @@
-
-
-body{
+body {
+  font-family: Helvetica, Sans-Serif;
   background-image: url("HomeImages/PapagoHoleInTheWallVERYOP.jpg");
-  background-color: #cccccc;
+  background-color: #E7E1E1;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  }
 
-  font-family: Helvetica, Sans-Serif;
-}
+@media only screen and (max-width: 500px) {
+      body {
+        background:none;
+        background-color: #E7E1E1;
+       }
+  }
 
 h1{
   color:  #543642;
