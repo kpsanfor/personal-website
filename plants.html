@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="kariStyle.css">
+<body>
+
+  <!-- Navigation -->
+  <div class="container-fluid">
+  <nav class="navbar navbar-dark navbar-expand-lg navbar-inverse bg-inverse" style="background-color: #543642;">
+    <a class="navbar-brand active" href="index.html">Kari Sanford <span class="sr-only">(current)</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerText" aria-controls="navbarTogglerText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerText">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="resume.html">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="outreach.html">Outreach</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="creative.html">Creative</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="archive.html">Archive</a>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
+      <div class="btn-group">
+        <a class="btn btn-default" href="mailto:karipsanford@gmail.com?" style="color:#9B787E">
+          <i class="fa fa-envelope btn" title="E-mail"> </i>
+        </a>
+          <a class="btn btn-default" href="https://linkedin.com/in/karisanfordstem/" style="color:#9B787E">
+            <i class="fa fa-linkedin btn" title="LinkedIn"> </i>
+          </a>
+          <a class="btn btn-default" href="https://github.com/kpsanfor" style="color:#9B787E">
+            <i class="fa fa-github btn" title="Github"> </i>
+          </a>
+          <a class="btn btn-default" href="https://twitter.com/KariGrasshopper" style="color:#9B787E">
+            <i class="fa fa-twitter btn" title="Twitter"> </i>
+          </a>
+        </div>
+      </ul>
+  </nav> <!--end of navigation -->
+  </div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-md-11"><br>
+
+        <h1><b>Plant Watering Schedule</b></h1>
+
+        <h2 id="dayFunc"></h2>
+        <script>
+          function dayOfWeek(){
+            var d = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+
+            var n = weekday[d.getDay()];
+            document.getElementById("dayFunc").innerHTML = "Today is " + n + "!";
+            return n;
+          }
+          dayOfWeek()
+
+          </script>
+
+      </div>
+    </div>
+  </div>
+
+<!--Watering Sch A-->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-md-11"><br>
+          <h3><b>Outdoor Plants</b></h3>
+          <table class="outdoorPlantsTable table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Plant</th>
+                <th scope="col">Water Need</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mums</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Broccoli</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Rosemary</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Jalapeno</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Portulaca</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"> </i> <i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Purple Flowers</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Red Flowers</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Barrel Cactus</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Dragonsnaps</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+              <tr>
+                <td>Ground</td>
+                <td>Hybrid Tomato</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i> <i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3><b>Indoor Plants</b></h3>
+          <table class="indoorPlantsTable table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Area</th>
+                <th scope="col">Plant</th>
+                <th scope="col">Water Need</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Living Room: Corner</td>
+                <td>Assorted Succulent Bowl</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+              <tr>
+                <td>Living Room: Fireplace</td>
+                <td>Dragon Tree (Dracaena Marginata)</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+              <tr>
+                <td>Living Room: Fireplace</td>
+                <td>Assorted Succulents</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+              <tr>
+                <td>Living Room: Coffee Table</td>
+                <td>Golden Devil's Ivy</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+              <tr>
+                <td>Kitchen: Table</td>
+                <td>Succulent</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+              <tr>
+                <td>Kitchen: Windowsill</td>
+                <td>Succulent</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+              <tr>
+                <td>Kitchen: Windowsill</td>
+                <td>Aloe Vera</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+              <tr>
+                <td>Kitchen: Windowsill</td>
+                <td>Mint</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+              <tr>
+                <td>Bedroom</td>
+                <td>Succulent</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+              <tr>
+                <td>Bedroom</td>
+                <td>Snake Plant</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+              <tr>
+                <td>Bedroom</td>
+                <td>Asparagus Fern</td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+              </tr>
+            </tbody>
+          </table>
+
+      </div>
+    </div>
+  </div>
+
+<!--Watering Sch B-->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-md-11"><br>
+      </div>
+    </div>
+  </div>
+
+<!--Watering Sch C-->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-md-11"><br>
+      </div>
+    </div>
+  </div>
+
+<!--Watering Sch D-->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-md-11"><br>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
