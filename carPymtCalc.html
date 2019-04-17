@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="kariStyle.css">
+<body>
+
+  <!-- Navigation -->
+  <div class="container-fluid">
+  <nav class="navbar navbar-dark navbar-expand-lg navbar-inverse bg-inverse" style="background-color: #543642;">
+    <a class="navbar-brand active" href="index.html">Kari Sanford <span class="sr-only">(current)</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerText" aria-controls="navbarTogglerText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerText">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="resume.html">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="outreach.html">Outreach</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="creative.html">Creative</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="archive.html">Archive</a>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
+      <div class="btn-group">
+        <a class="btn btn-default" href="mailto:karipsanford@gmail.com?" style="color:#9B787E">
+          <i class="fa fa-envelope btn" title="E-mail"> </i>
+        </a>
+          <a class="btn btn-default" href="https://linkedin.com/in/karisanfordstem/" style="color:#9B787E">
+            <i class="fa fa-linkedin btn" title="LinkedIn"> </i>
+          </a>
+          <a class="btn btn-default" href="https://github.com/kpsanfor" style="color:#9B787E">
+            <i class="fa fa-github btn" title="Github"> </i>
+          </a>
+          <a class="btn btn-default" href="https://twitter.com/KariGrasshopper" style="color:#9B787E">
+            <i class="fa fa-twitter btn" title="Twitter"> </i>
+          </a>
+        </div>
+      </ul>
+  </nav> <!--end of navigation -->
+  </div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-md-11"><br>
+        <h1><b>Car Payment Calculator</b></h1>
+
+        <form id="cpcForm" action="/action_page.php">
+          Car Make: <input type="text" name="cMake"><br>
+          Car Model: <input type="text" name="cModel"><br>
+          Car Year: <input type="number" name="cYear"><br>
+          Car List Price: $<input type="number" name="cListPrice"><br><br>
+
+          Down Payment: $<input type="number" name="cDownPay"><br>
+          Interest Rate: <input type="number" min="0.1" step="0.1" name="cYear"><br>
+          Loan Length (months): <input type="number" name="cLoanLength"><br><br>
+
+          <input type="button" onclick="carFunction()" value="Submit">
+        </form>
+
+        <script>
+          function carFunction() {
+            document.getElementById("cpcForm").submit();
+          }
+        </script>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</html>
