@@ -87,12 +87,11 @@
     </div>
   </div>
 
-<!--Watering Sch A-->
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-8">
       <div class="col-md-11"><br>
           <h3><b>Outdoor Plants</b></h3>
-          <table class="outdoorPlantsTable table table-striped">
+          <table class="outdoorPlantsDailyTable table table-striped">
             <thead>
               <tr>
                 <th scope="col">Level</th>
@@ -106,6 +105,10 @@
                 <td>Mums</td>
                 <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
               </tr>
+              <td>1</td>
+              <td>Jalapeno</td>
+              <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+            </tr>
               <tr>
                 <td>1</td>
                 <td>Broccoli</td>
@@ -118,13 +121,13 @@
               </tr>
               <tr>
                 <td>1</td>
-                <td>Jalapeno</td>
+                <td>Pea Sprouts</td>
                 <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
               </tr>
               <tr>
                 <td>2</td>
                 <td>Portulaca</td>
-                <td><i class="fa fa-tint" title="Water" style="color: #364639"> </i> <i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+                <td><i class="fa fa-tint" title="Water" style="color: #364639"> </i></td>
               </tr>
               <tr>
                 <td>2</td>
@@ -153,102 +156,150 @@
               </tr>
             </tbody>
           </table>
-
+      </div>
+      </div>
+      </div>
+    <div class="row">
+      <div class="col-md-8">
+          <div class="col-md-11"><br>
           <h3><b>Indoor Plants</b></h3>
-          <table class="indoorPlantsTable table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Area</th>
-                <th scope="col">Plant</th>
-                <th scope="col">Water Need</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Living Room: Corner</td>
-                <td>Assorted Succulent Bowl</td>
-                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
-              </tr>
-              <tr>
-                <td>Living Room: Fireplace</td>
-                <td>Dragon Tree (Dracaena Marginata)</td>
-                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
-              </tr>
-              <tr>
-                <td>Living Room: Fireplace</td>
-                <td>Assorted Succulents</td>
-                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
-              </tr>
-              <tr>
-                <td>Living Room: Coffee Table</td>
-                <td>Golden Devil's Ivy</td>
-                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
-              </tr>
-              <tr>
-                <td>Kitchen: Table</td>
-                <td>Succulent</td>
-                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
-              </tr>
-              <tr>
-                <td>Kitchen: Windowsill</td>
-                <td>Succulent</td>
-                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
-              </tr>
-              <tr>
-                <td>Kitchen: Windowsill</td>
-                <td>Aloe Vera</td>
-                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
-              </tr>
-              <tr>
-                <td>Kitchen: Windowsill</td>
-                <td>Mint</td>
-                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
-              </tr>
-              <tr>
-                <td>Bedroom</td>
-                <td>Succulent</td>
-                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
-              </tr>
-              <tr>
-                <td>Bedroom</td>
-                <td>Snake Plant</td>
-                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
-              </tr>
-              <tr>
-                <td>Bedroom</td>
-                <td>Asparagus Fern</td>
-                <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
-              </tr>
-            </tbody>
-          </table>
 
-      </div>
+          <!--Mon indoor-->
+            <table id="indoorPlantsMondayTable", class="indoorPlantsMondayTable table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Area</th>
+                  <th scope="col">Plant</th>
+                  <th scope="col">Water Need</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Living Room: Corner</td>
+                  <td>Assorted Succulent Bowl</td>
+                  <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+                </tr>
+                <tr>
+                  <td>Living Room: Fireplace</td>
+                  <td>Dragon Tree</td>
+                  <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+                </tr>
+                <tr>
+                  <td>Living Room: Fireplace</td>
+                  <td>Assorted Succulents</td>
+                  <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+                </tr>
+                <tr>
+                  <td>Living Room: Coffee Table</td>
+                  <td>Golden Devil's Ivy</td>
+                  <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+                </tr>
+                <tr>
+                  <td>Desk</td>
+                  <td>Roses</td>
+                  <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+                </tr>
+              <tr>
+                  <td>Kitchen: Windowsill</td>
+                  <td>Succulent</td>
+                  <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+                </tr>
+                <tr>
+                  <td>Kitchen: Windowsill</td>
+                  <td>Aloe Vera</td>
+                  <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+                </tr>
+                <tr>
+                  <td>Kitchen: Windowsill</td>
+                  <td>Mint</td>
+                  <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+                </tr>
+                <tr>
+                  <td>Bedroom</td>
+                  <td>Succulents</td>
+                  <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+                </tr>
+              </tbody>
+            </table>
+
+
+          <!--WedFri indoor-->
+            <table id = "indoorPlantsWedFriTable", class="indoorPlantsWedFriTable table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Area</th>
+                  <th scope="col">Plant</th>
+                  <th scope="col">Water Need</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Living Room: Fireplace</td>
+                  <td>Assorted Succulents</td>
+                  <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+                </tr>
+                <tr>
+                  <td>Desk</td>
+                  <td>Roses</td>
+                  <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+                </tr>
+              <tr>
+                  <td>Kitchen: Windowsill</td>
+                  <td>Succulent</td>
+                  <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+                </tr>
+                <tr>
+                  <td>Kitchen: Windowsill</td>
+                  <td>Aloe Vera</td>
+                  <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+                </tr>
+                <tr>
+                  <td>Kitchen: Windowsill</td>
+                  <td>Mint</td>
+                  <td><i class="fa fa-tint" title="Water" style="color: #364639"></i></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <p id="indoorWaterP">You do not need to water any indoor plants today.</p>
+
+
+          <script>
+            function indoorSch(){
+              var d = new Date();
+              var weekday = new Array(7);
+              weekday[0] = "Sunday";
+              weekday[1] = "Monday";
+              weekday[2] = "Tuesday";
+              weekday[3] = "Wednesday";
+              weekday[4] = "Thursday";
+              weekday[5] = "Friday";
+              weekday[6] = "Saturday";
+
+              var n = weekday[d.getDay()];
+
+              if (n == "Sunday") {
+                document.getElementById("indoorPlantsMondayTable").visibility = "visible";
+              }
+              else if (n == "Wednesday" || "Friday" ){
+                document.getElementById("indoorPlantsWedFriTable").style.visibility = "visible";
+              }
+              else{
+                document.getElementById("indoorWaterP").style.visibility="visible";
+              }
+            }
+            indoorSch()
+
+            </script>
+
+
+
+        </div>
     </div>
+    <br>
   </div>
 
-<!--Watering Sch B-->
-  <div class="row">
-    <div class="col-md-12">
-      <div class="col-md-11"><br>
-      </div>
-    </div>
-  </div>
 
-<!--Watering Sch C-->
-  <div class="row">
-    <div class="col-md-12">
-      <div class="col-md-11"><br>
-      </div>
-    </div>
-  </div>
-
-<!--Watering Sch D-->
-  <div class="row">
-    <div class="col-md-12">
-      <div class="col-md-11"><br>
-      </div>
-    </div>
-  </div>
 
 
 
